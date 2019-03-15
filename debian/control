@@ -1,0 +1,30 @@
+Source: powertabeditor
+Section: sound
+Priority: optional
+Maintainer: Cameron White <cameronwhite91@gmail.com>
+Build-Depends: debhelper (>= 9), cmake (>= 3.1), qtbase5-dev, libboost-dev (>= 1.55),
+ libboost-date-time-dev, libboost-filesystem-dev, libboost-iostreams-dev,
+ libboost-program-options-dev, libboost-regex-dev, libasound2-dev,
+ libiberty-dev, binutils-dev, libpugixml-dev, catch,
+ librtmidi-dev
+Standards-Version: 4.3.0
+Homepage: https://github.com/powertab/powertabeditor
+Vcs-Git: https://github.com/powertab/powertabeditor.git
+Vcs-Browser: https://github.com/powertab/powertabeditor
+
+Package: powertabeditor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libqt5widgets5, libqt5printsupport5, libqt5network5,
+ libboost-date-time1.58.0 | libboost-date-time1.62.0 | libboost-date-time1.67.0,
+ libboost-filesystem1.58.0 | libboost-filesystem1.62.0 | libboost-filesystem1.67.0,
+ libboost-iostreams1.58.0 | libboost-iostreams1.62.0 | libboost-iostreams1.67.0,
+ libboost-program-options1.58.0 | libboost-program-options1.62.0 | libboost-program-options1.67.0,
+ libboost-regex1.58.0 | libboost-regex1.62.0 | libboost-regex1.67.0,
+ libasound2,
+ libpugixml1v5,
+ librtmidi2v5 | librtmidi3 | librtmidi4
+Suggests: timidity
+Description: Powertab, a guitar tablature editor
+ Power Tab Editor is an open-source and cross-platform guitar tablature
+ editor.

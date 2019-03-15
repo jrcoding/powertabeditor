@@ -1,0 +1,7 @@
+powertabeditor (2.0.0~alpha10~jrc1) unstable; urgency=medium
+
+  [ jrcoding ]
+  * debianize for local use
+  * depends on git commit 86ab9341ce24cea0eb3db1628d577b7d374b12be
+  
+ -- jrcoding <jr.coding@gmail.com>  Fri, 01 Mar 2019 06:16:16 +0100
